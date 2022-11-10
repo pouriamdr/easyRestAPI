@@ -5,7 +5,8 @@ Code less with this useful Rest API class.
   </h3>
 It is simple, import easyRestAPI.php in your project using include like this:
 <br>
-```php
+
+```
 
 <?
 include_once("/path/to/easyRestAPI.php");
@@ -17,7 +18,8 @@ Introduce
 </h3>
 First create object of easyRestAPI class where you want handle requests and change settings if you want:
 <br>
-```php
+
+```
 
 <?
 include_once("/path/to/easyRestAPI.php");
@@ -30,10 +32,12 @@ date_default_timezone_set('Asia/Tehran'); // For saving logs with your custom ti
 // END OF SETTINGS
 
 ```
+
 <br>
 Then parse inputs:
 <br>
-```php
+
+```
 
 $inputs = $rest->inputs; // Get all income data
 if($inputs['username']['method'] != 'POST') {
@@ -55,10 +59,12 @@ array(
 */
 
 ```
+
 <br>
 At the end send your response:
 <br>
-```php
+
+```
 
 $responseAs = 'json'; // Or text
 $rest->response('OK', $responseAs);
@@ -78,6 +84,7 @@ $rest->response('OK', $responseAs);
 */
 
 ```
+
 <br>
 Hope this simple library helps in your projects,
 Good luck.
