@@ -19,7 +19,7 @@ Introduce
 First create object of easyRestAPI class where you want handle requests and change settings if you want:
 <br>
 
-```
+```php
 
 <?
 include_once("/path/to/easyRestAPI.php");
@@ -37,7 +37,7 @@ date_default_timezone_set('Asia/Tehran'); // For saving logs with your custom ti
 Then parse inputs:
 <br>
 
-```
+```php
 
 $inputs = $rest->inputs; // Get all income data
 if($inputs['username']['method'] != 'POST') {
@@ -64,7 +64,7 @@ array(
 At the end send your response:
 <br>
 
-```
+```php
 
 $responseAs = 'json'; // Or text
 $rest->response('OK', $responseAs);
