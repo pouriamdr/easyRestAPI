@@ -6,7 +6,7 @@ Code less with this useful Rest API class.
 It is simple, import easyRestAPI.php in your project using include like this:
 <br>
 
-```
+```php
 
 <?
 include_once("/path/to/easyRestAPI.php");
